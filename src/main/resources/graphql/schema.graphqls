@@ -1,0 +1,12 @@
+type ProductEntity{
+    id:ID,
+    name:String,
+    quantity:Float
+    category:String,
+    price:Float
+}
+
+type Query{
+    getAllProducts:[ProductEntity],
+    getAllProductsByCategory(category:String):[ProductEntity]
+}
